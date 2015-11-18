@@ -126,7 +126,6 @@
 
       e.preventDefault();
 
-      console.log(this.$el.find("input#todo-item"));
       var textInput = this.$el.find("input#todo-item");
       var inputValue = textInput.val().trim();
 
