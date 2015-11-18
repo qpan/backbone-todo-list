@@ -1,1 +1,1 @@
-A multifunctional backboneJS todo application
+A comprehensive backboneJS todo application
