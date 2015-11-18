@@ -90,8 +90,6 @@
 
   var ItemsView = Backbone.View.extend({
     el: "#container",
-    className: "todos",
-    collection: Items,
 
     initialize: function(){
       this.collection.on("add", this.addedItemToCollection, this);
@@ -134,7 +132,7 @@
         this.collection.add(item);
 
         textInput.val("");
-      } return false;
+      }
     }
 
   });
