@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link type="text/css" href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="container">
+  <form action="" id="form">
+    <div style="font-size:34px;font-weight:bold;">Todo List</div>
+    <input id="todo-item" type="text" class="form-control" style="width:48.5%;display:inline;">
+    <span class="fa fa-plus-circle" style="margin-left:10px;"><input type="submit" id="submit" value="add" style="margin-left:-24px;opacity:0;" /></span>
+  </form>
+</div>
+
+<script type="text/template" id="tpl">
+<div class="row">
+  <div class="col-sm-6">
+    <input class="form-control item__field" style="" type="text" value="<%= task %>" disabled/>
+  </div>
+  <div class="col-sm-6">
+    <button class="btn btn-primary item__edit" type="button">edit</button>
+    <button class="btn btn-info item__cancel" type="button" disabled>cancel</button>
+    <button class="btn btn-success item__save" type="button" disabled >save</button>
+    <button class="btn btn-danger item__delete" type="button">delete</button>
+  </div>
+</div>
+</script>
+
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.15/es5-shim.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"> </script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.16/backbone.localStorage.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
